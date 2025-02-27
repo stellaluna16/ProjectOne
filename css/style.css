@@ -10,9 +10,24 @@ body{
     background-color: #590404;
     font-family: 'pf-videotext',sans-serif;
     color: beige;
-    margin-bottom: 50%;
-    
+    margin-bottom: 50%;   
 }
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    top:0;
+    width:100%;
+    z-index:10;
+}
+
+.logo{
+    width: 300px;
+    position: left;
+}
+
 nav a{
     text-decoration: none;
     color: beige;
@@ -25,6 +40,8 @@ nav a:hover{
     background-color: #7d0707;
 }
 nav{
+    display: flex;
+    gap: 20px;
     text-align: center;
     margin: 15px;
     padding-inline: 10px;
@@ -33,13 +50,14 @@ nav{
 
 h1{
     text-align: center;
-    margin-top: 50px;
+    margin-top: 30px;
     font-size: 130px;
     color: antiquewhite;
     font-family:'altesse-std-64pt', cursive;
 
 }
 h3{
+    margin-top: 0px;
     text-align: center ;
     font-family: 'pf-videotext',sans-serif;
     font-size:40px ;
@@ -55,7 +73,28 @@ h2 a:hover{
     background-color: #7d0707;
 
 }
-
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+li a{
+    text-decoration: none;
+    padding: 10px;
+    color: antiquewhite;
+    margin: 10px;
+    font-family: 'pf-videotext',sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+}
+li:hover{
+    color: antiquewhite;
+    background-color: #7d0707;
+}
 .container {
     display: flex;
     flex-direction: row;
@@ -78,7 +117,12 @@ h2 a:hover{
     line-height: 1.5; 
     padding: 0 10px; 
 }
-
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .content {
     display: flex;
@@ -120,7 +164,6 @@ h2 a:hover{
     font-size: 16px;
     z-index: 1;
 }
-
 footer {
     text-align: center;
     margin-top: 50px;
